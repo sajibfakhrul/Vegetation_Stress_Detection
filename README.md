@@ -31,9 +31,7 @@ For each month, the following bands are used:
 
 ### Vegetation Index
 - **NDVI** is computed for every month:
-  \[
-  NDVI = \frac{NIR - Red}{NIR + Red}
-  \]
+   NDVI = (NIR - Red) / (NIR + Red)
 
 ---
 
