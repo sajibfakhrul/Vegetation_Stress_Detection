@@ -148,8 +148,8 @@ Three deep-learning approaches are evaluated.
 | Model   | RMSE | MAE  | R²   |
 |---------|------|------|------|
 | CNN     | 0.082| 0.066| 0.95 |
-| ViT     | ~0.164| —   | 0.81 |
-| DINOv2  | 0.159| —   | 0.82 |
+| ViT     | 0.164| 0.104| 0.81 |
+| DINOv2  | 0.159| 0.103| 0.82 |
 
 These results show that both convolutional and transformer-based models can effectively learn vegetation-stress patterns from multi-temporal Sentinel-2 data, with CNN achieving the strongest overall performance.
 
