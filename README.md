@@ -55,21 +55,18 @@ Because large-scale field labels are not available, this project uses a **relati
 ### Step 4: NDVI ratio
 A per-pixel ratio map is created:
 
-\[
-R = \frac{NDVI_{2025}}{NDVI_{2023}}
-\]
+R = {NDVI_{2025}}/{NDVI_{2023}}
 
 Pixels with very low baseline NDVI are masked to avoid unstable ratios.
 
 ### Step 5: Dynamic thresholding
 - A **single regional threshold** is computed as:
-  \[
-  T = \frac{\text{mean NDVI}_{2025}}{\text{mean NDVI}_{2023}}
-  \]
+  
+  T = {{mean NDVI}_{2025}}/{{mean NDVI}_{2023}}
+
 - Pixels are labeled as **stressed** if:
-  \[
+  
   R < T
-  \]
 
 This produces a spatially detailed **stress proxy map** representing relative vegetation decline between 2023 and 2025.
 
