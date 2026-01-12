@@ -160,7 +160,17 @@ These results show that both convolutional and transformer-based models can effe
 
 ---
 
-## Google Earth Engine script
+### Google Earth Engine script
 https://code.earthengine.google.com/f9a27de36dc038d0190217b066d2e3a6
 
+---
 
+### Acknowledgements
+
+Sentinel-2 data provided by Copernicus via Google Earth Engine.
+
+DINOv2 model by Meta AI Research.
+
+Open-source tools: TensorFlow, PyTorch, scikit-learn, rasterio, and geemap.
+
+---
