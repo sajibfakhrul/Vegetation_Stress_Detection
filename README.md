@@ -55,14 +55,14 @@ Because large-scale field labels are not available, this project uses a **relati
 ### Step 4: NDVI ratio
 A per-pixel ratio map is created:
 
-R = {NDVI_{2025}}/{NDVI_{2023}}
+R = NDVI_2025 / NDVI_2023
 
 Pixels with very low baseline NDVI are masked to avoid unstable ratios.
 
 ### Step 5: Dynamic thresholding
 - A **single regional threshold** is computed as:
   
-  T = {{mean NDVI}_{2025}}/{{mean NDVI}_{2023}}
+  T = mean(NDVI_2025) / mean(NDVI_2023)
 
 - Pixels are labeled as **stressed** if:
   
