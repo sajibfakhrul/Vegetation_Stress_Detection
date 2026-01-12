@@ -97,12 +97,25 @@ For each patch:
 - **Regression label**
   - Continuous value in [0, 1] representing stress severity.
 
-### Purity filtering
-To reduce ambiguity:
-- **Healthy patches:** at least 60% healthy pixels.  
-- **Stressed patches:** at least 60% stressed pixels.  
 
-Only high-confidence patches are exported for training.
+### Purity filtering
+
+To reduce label ambiguity, only high-confidence patches are used for training.
+
+- **Purity** is defined as the fraction of healthy pixels in a patch:
+  
+  purity = 1 − mean(stress_proxy)
+
+- **Healthy patches**  
+  - majority label = healthy  
+  - purity ≥ 0.6  
+
+- **Stressed patches**  
+  - majority label = stressed  
+  - purity ≤ 0.4  
+  
+
+This ensures that only patches with strong class dominance are included, reducing noise near class boundaries.
 
 ---
 
